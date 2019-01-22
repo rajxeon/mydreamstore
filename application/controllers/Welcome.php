@@ -117,6 +117,7 @@ class Welcome extends CI_Controller {
 		$request_token['oauth_token'] = $_SESSION['oauth_token'];
 		$request_token['oauth_token_secret'] = $_SESSION['oauth_token_secret']; 
 		//$connection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET, $request_token['oauth_token'], $request_token['oauth_token_secret']);
+		$screen_name=$_GET['screen_name'];
 		$access_token=$_SESSION['access_token'] ; 
 		$connection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET, $access_token['oauth_token'], $access_token['oauth_token_secret']);
 		  
